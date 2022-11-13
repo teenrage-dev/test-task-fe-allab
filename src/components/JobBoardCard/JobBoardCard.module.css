@@ -1,0 +1,203 @@
+.Item {
+  display: flex;
+  padding: 13px 16px 27px;
+  border-radius: 8px;
+
+  background-color: #eff0f5;
+
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 1920px) {
+  .Item {
+    background-color: #ffffff;
+    padding: 24px 16px;
+  }
+}
+
+.Item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.ImgContainer {
+  display: block;
+  width: 66px;
+  height: 66px;
+  margin-right: 19px;
+  border-radius: 50%;
+}
+
+.Img {
+  width: 66px;
+  height: 66px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1920px) {
+  .ImgContainer {
+    width: 85px;
+    height: 85px;
+    margin-right: 26px;
+  }
+  .Img {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+.AboutContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+  .AboutContainer {
+    flex-direction: row;
+  }
+}
+
+.TopBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #3a4562;
+  font-weight: 400;
+
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1920px) {
+  .Title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    max-width: 712px;
+    min-width: 500px;
+  }
+}
+
+.Text {
+  font-size: 16px;
+  line-height: 1.56;
+  font-weight: 400;
+  margin-bottom: 7px;
+
+  color: #878d9d;
+}
+
+@media screen and (min-width: 1920px) {
+  .Text {
+    margin-bottom: 8px;
+  }
+}
+
+.Location {
+  display: flex;
+}
+
+.LocationIcon {
+  position: absolute;
+  left: -3px;
+}
+
+.LocationText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1ю56;
+
+  color: #878d9d;
+
+  padding-left: 21px;
+}
+
+.BtmBox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1920px) {
+  .BtmBox {
+    margin-bottom: 0;
+  }
+}
+
+.RatingField {
+  width: 100%;
+  margin: 0;
+}
+
+/* .Rating {
+  size: 15px;
+} */
+
+@media screen and (min-width: 1920px) {
+  .RatingField {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  .Rating {
+    /* font-size: 35px; */
+    /* size: 25px; */
+  }
+}
+
+.TimeField {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.TimeCreate {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: right;
+}
+
+.BookMarkField {
+  display: none;
+}
+
+@media screen and (min-width: 1920px) {
+  .BookMarkField {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .BookMark {
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: #70778b;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .TimeCreate {
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.56;
+
+    min-width: 145px;
+    color: #878d9d;
+  }
+}

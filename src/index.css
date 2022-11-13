@@ -1,0 +1,88 @@
+@import-normalize;
+@import '~normalize.css/normalize.css';
+
+body {
+  margin: 0;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('./fonts/ProximaNova/ProximaNova-Light.eot');
+  src: local('Proxima Nova Light c'), local('ProximaNova-Light'),
+    url('./fonts/ProximaNova/ProximaNova-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+    url('./fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('./fonts/ProximaNova/ProximaNova-Regular.eot');
+  src: local('Proxima Nova ensed Regular'), local('ProximaNova-Regular'),
+    url('./fonts/ProximaNova/ProximaNova-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('./fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('./fonts/ProximaNova/ProximaNova-Bold.eot');
+  src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('./fonts/ProximaNova/ProximaNova-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+    url('./fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
