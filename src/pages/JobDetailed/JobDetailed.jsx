@@ -186,7 +186,8 @@ export const JobDetailed = () => {
             <span className={css.ContactAdress}>
               <ImLocation
                 className={css.LocationIcon}
-                fill="#D8D8D8"
+                size="2rem"
+                color="#D8D8D8"
                 opacity="0.56"
               />
               {item.address}
