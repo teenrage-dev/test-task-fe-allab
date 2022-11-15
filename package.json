@@ -1,8 +1,8 @@
 {
-  "name": "Test-Task-FE-ALLab",
+  "name": "test-task-fe-allab",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://teenrage-dev.github.io/Test-Task-FE-ALLab/",
+  "homepage": "https://teenrage-dev.github.io/test-task-fe-allab/",
   "dependencies": {
     "@react-google-maps/api": "^2.17.0",
     "@testing-library/jest-dom": "^5.16.3",
