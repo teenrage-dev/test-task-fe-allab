@@ -6,10 +6,9 @@ import moment from 'moment';
 
 import { ImLocation } from 'react-icons/im';
 import { HiOutlineBookmark } from 'react-icons/hi';
-import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const JobBoardCard = ({ item }) => {
-  const navigate = useNavigate();
   return (
     <li key={item.id} className={css.Item}>
       <div className={css.ImgContainer}>
@@ -17,9 +16,13 @@ export const JobBoardCard = ({ item }) => {
       </div>
       <div className={css.AboutContainer}>
         <div className={css.TopBox}>
-          <h3 className={css.Title} onClick={() => navigate('/details')}>
+          <NavLink
+            className={`${css.Title} link`}
+            to={'details'}
+            state={{ ...item }}
+          >
             {item.title}
-          </h3>
+          </NavLink>
           <p className={css.Text}>
             {item.name} •{' '}
             {item.locality ? `${item.locality}` : 'Location not found'}
@@ -49,7 +52,7 @@ export const JobBoardCard = ({ item }) => {
           </div>
           <div className={css.TimeField}>
             <div className={css.BookMarkField}>
-              <HiOutlineBookmark className={css.BookMark} />
+              <HiOutlineBookmark className={css.BookMarkIcon} />
             </div>
             <p className={css.TimeCreate}>
               Posted {moment(item.createdAt).startOf('day').fromNow()}
