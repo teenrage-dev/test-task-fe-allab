@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Home } from 'pages/Home/Home';
 import { JobBoard } from 'pages/JobBoard/JobBoard';
 import { JobDetailed } from 'pages/JobDetailed/JobDetailed';
